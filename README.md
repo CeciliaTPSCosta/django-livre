@@ -32,4 +32,4 @@ API de um banco fictício com clientes, contas e transações.
 * **GET** /api/v1/transfers - List all transfers;
 * **GET** /api/v1/transfers/<transfer_id> - Fetch a specific transfer;
 * **PATCH** /api/v1/transfers/<transfer_id> - Patch a specific transfer;
-**DELETE** /api/v1/transfers/<transfer_id> - Delete a specific transfer;
+* **DELETE** /api/v1/transfers/<transfer_id> - Delete a specific transfer;
