@@ -2,7 +2,7 @@ from django.db import models
 from django.core.validators import RegexValidator
 from sequences import get_next_value
 
-# Base Models from where other models will inherit attributs and methods
+# Base Model from where other models will inherit attributs and methods
 class Base(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     update = models.DateTimeField(auto_now=True)
@@ -47,8 +47,8 @@ class Clients(Base):
     account = models.OneToOneField(Account, on_delete=models.CASCADE, primary_key=True)
 
     class Meta:
-        verbose_name = 'client'
-        verbose_name = 'clients'
+        verbose_name = 'Client'
+        verbose_name_plural = 'Clients'
         
     def __str__(self) -> str:
         return self.name
@@ -70,8 +70,8 @@ class Transfer(Base):
                                      verbose_name='Receiver')
 
     class Meta:
-        verbose_name = 'transfer'
-        verbose_name_plural = 'transfers'
+        verbose_name = 'Transfer'
+        verbose_name_plural = 'Transfers'
 
 
     def str(self) -> str:
